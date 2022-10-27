@@ -31,8 +31,8 @@ add_action( 'init', 'register_themezee_icon_list_block' );
  * Set up the Plugin Updater Constants.
  */
 define( 'THEMEZEE_ICON_LIST_BLOCK_VERSION', '1.0' );
-define( 'THEMEZEE_ICON_LIST_BLOCK_NAME', 'Icon List Block' );
-define( 'THEMEZEE_ICON_LIST_BLOCK_ID', 53694 );
+define( 'THEMEZEE_ICON_LIST_BLOCK_NAME', 'Donovan Pro' );
+define( 'THEMEZEE_ICON_LIST_BLOCK_ID', 171494 );
 define( 'THEMEZEE_ICON_LIST_BLOCK_STORE_URL', 'https://themezee.com' );
 
 
