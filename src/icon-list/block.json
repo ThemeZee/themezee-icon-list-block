@@ -4,7 +4,7 @@
 	"name": "themezee/icon-list",
 	"version": "0.1.0",
 	"title": "Icon List",
-	"category": "design",
+	"category": "themezee-blocks",
 	"description": "Create an icon list.",
 	"attributes": {
 		"values": {
