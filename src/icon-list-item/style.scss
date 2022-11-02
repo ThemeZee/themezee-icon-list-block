@@ -1,0 +1,9 @@
+.wp-block-themezee-icon-list-item {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	&.is-layout-flex {
+		gap: 0.5em;
+	}
+}

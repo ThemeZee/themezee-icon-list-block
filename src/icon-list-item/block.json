@@ -6,7 +6,7 @@
 	"title": "Icon List Item",
 	"category": "themezee-blocks",
 	"parent": [ "themezee/icon-list" ],
-	"description": "Create a list item with icon.",
+	"description": "Display a list item with an icon.",
 	"attributes": {
 		"placeholder": {
 			"type": "string"
@@ -20,8 +20,51 @@
 		}
 	},
 	"supports": {
-		"className": false,
-		"__experimentalSelector": "li"
+		"__experimentalExposeControlsToChildren": true,
+		"__experimentalLayout": {
+			"allowSwitching": false,
+			"allowInheriting": false,
+			"default": {
+				"type": "flex"
+			}
+		},
+		"__experimentalSelector": "li",
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"text": true,
+				"background": true,
+				"link": true
+			}
+		},
+		"spacing": {
+			"margin": [ "top", "bottom" ],
+			"padding": true,
+			"blockGap": true,
+			"__experimentalDefaultControls": {
+				"blockGap": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"style": true,
+			"width": true,
+			"radius": true
+		}
 	},
 	"textdomain": "themezee-icon-block",
 	"editorScript": "file:./index.js",

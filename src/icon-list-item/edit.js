@@ -12,6 +12,11 @@ import { createBlock } from '@wordpress/blocks';
 import { useSelect } from '@wordpress/data';
 import { store as blockEditorStore } from '@wordpress/block-editor';
 
+/**
+ * Internal dependencies
+ */
+import './editor.scss';
+
 export default function ListItemEdit( {
 	attributes,
 	setAttributes,
@@ -19,7 +24,7 @@ export default function ListItemEdit( {
 	mergeBlocks,
 	clientId,
 } ) {
-	const { placeholder, content } = attributes;
+	const { placeholder, content, layout } = attributes;
 
 	const ref = useRef();
 	const richTextRef = useRef();
@@ -35,6 +40,7 @@ export default function ListItemEdit( {
 			iconWidth: "1.2em",
 			iconHeight: "1.2em",
 		} ] ],
+		__experimentalLayout: layout,
 		renderAppender: false,
 	} );
 
