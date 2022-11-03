@@ -44,8 +44,17 @@
 			}
 		},
 		"spacing": {
-			"margin": true,
-			"padding": true
+			"margin": [ "top", "bottom" ],
+			"padding": true,
+			"__experimentalDefaultControls": {
+				"padding": true
+			}
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"style": true,
+			"width": true,
+			"radius": true
 		},
 		"__unstablePasteTextInline": true,
 		"__experimentalSelector": "ol,ul",
