@@ -56,8 +56,8 @@ export default function ListItemEdit( {
 						setAttributes( { content: nextContent } )
 					}
 					value={ content }
-					aria-label={ __( 'List text' ) }
-					placeholder={ placeholder || __( 'List' ) }
+					aria-label={ __( 'List text', 'themezee-icon-list-block' ) }
+					placeholder={ placeholder || __( 'List', 'themezee-icon-list-block' ) }
 					onSplit={ ( value ) => {
 						const innerBlocks = getBlock( clientId ).innerBlocks;
 						return createBlock(

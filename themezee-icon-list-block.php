@@ -21,10 +21,25 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function register_themezee_icon_list_block() {
+
+	// Load translation for PHP files.
+	load_plugin_textdomain( 'themezee-icon-list-block', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 	// Only register blocks if Icon block is activated.
 	if ( function_exists( 'register_themezee_icon_block' ) ) {
-		register_block_type( __DIR__ . '/build/icon-list' );
-		register_block_type( __DIR__ . '/build/icon-list-item' );
+		register_block_type( __DIR__ . '/build/icon-list-item', [
+			'title'       => _x( 'Icon List Item', 'block title', 'themezee-icon-list-block' ),
+			'description' => _x( 'Display a list item with an icon.', 'block description', 'themezee-icon-list-block' ),
+		] );
+
+		register_block_type( __DIR__ . '/build/icon-list', [
+			'title'       => _x( 'Icon List', 'block title', 'themezee-icon-list-block' ),
+			'description' => _x( 'Create an icon list.', 'block description', 'themezee-icon-list-block' ),
+		] );
+
+		// Load translation for JS files.
+		wp_set_script_translations( 'themezee-icon-list-editor-script', 'themezee-icon-list-block', plugin_dir_path( __FILE__ ) . 'languages' );
+		wp_set_script_translations( 'themezee-icon-list-item-editor-script', 'themezee-icon-list-block', plugin_dir_path( __FILE__ ) . 'languages' );
 	}
 }
 add_action( 'init', 'register_themezee_icon_list_block' );
