@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       ThemeZee Icon List Block
- * Description:       Display a SVG icon.
+ * Description:       Create an icon list.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           1.0
